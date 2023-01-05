@@ -4,18 +4,18 @@
 	{
 		static void Main(string[] args)
 		{
-			PlayerInfo playerinfo = new PlayerInfo("Sergey", "Ork", 24, "Helicopter");
+			Player playerinfo = new Player("Sergey", "Ork", 24, "Helicopter");
 			playerinfo.ShowInfo();
 		}
 	}
-	public class PlayerInfo
+	public class Player
 	{
 		private string _name;
 		private string _race;
 		private int _age;
 		private string _gender;
 
-		public PlayerInfo(string name, string race, int age, string gender)
+		public Player(string name, string race, int age, string gender)
 		{
 			_name=name;
 			_race=race;
