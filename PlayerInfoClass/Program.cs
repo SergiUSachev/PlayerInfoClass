@@ -5,15 +5,16 @@
 		static void Main(string[] args)
 		{
 			PlayerInfo playerinfo = new PlayerInfo("Sergey", "Ork", 24, "Helicopter");
-			playerinfo.ShowPlayerInfo();
+			playerinfo.ShowInfo();
 		}
 	}
+
 	public class PlayerInfo
 	{
-		public string Name;
-		public string Race;
-		public int Age;
-		public string Gender;
+		private string Name;
+		private string Race;
+		private int Age;
+		private string Gender;
 
 		public PlayerInfo(string name, string race, int age, string gender)
 		{
@@ -23,7 +24,7 @@
 			Gender=gender;
 		}
 
-		public void ShowPlayerInfo()
+		public void ShowInfo()
 		{
 			Console.WriteLine($"Информация об игроке:\nИмя: {Name} \nРаса: {Race} \nВозраст: {Age} \nПол: {Gender}");
 		}
