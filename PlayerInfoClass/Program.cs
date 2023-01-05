@@ -10,22 +10,22 @@
 	}
 	public class PlayerInfo
 	{
-		private string Name;
-		private string Race;
-		private int Age;
-		private string Gender;
+		private string _name;
+		private string _race;
+		private int _age;
+		private string _gender;
 
 		public PlayerInfo(string name, string race, int age, string gender)
 		{
-			Name=name;
-			Race=race;
-			Age=age;
-			Gender=gender;
+			_name=name;
+			_race=race;
+			_age=age;
+			_gender=gender;
 		}
 
 		public void ShowInfo()
 		{
-			Console.WriteLine($"Информация об игроке:\nИмя: {Name} \nРаса: {Race} \nВозраст: {Age} \nПол: {Gender}");
+			Console.WriteLine($"Информация об игроке:\nИмя: {_name} \nРаса: {_race} \nВозраст: {_age} \nПол: {_gender}");
 		}
 	}
 }
