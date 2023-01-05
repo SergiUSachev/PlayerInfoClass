@@ -8,7 +8,6 @@
 			playerinfo.ShowInfo();
 		}
 	}
-
 	public class PlayerInfo
 	{
 		private string Name;
